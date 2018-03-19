@@ -1,4 +1,4 @@
-package university;
+package university.db;
 
 import java.sql.DriverManager;
 import java.sql.Connection;

@@ -1,7 +1,7 @@
 package db;
 
 import org.junit.Test;
-import university.DBUtils;
+import university.db.DBUtils;
 
 public class DBTest {
     @Test
