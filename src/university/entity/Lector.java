@@ -5,11 +5,19 @@ import java.util.List;
 
 public class Lector {
     private int id;
-    private String name;
-    private LectorDegree lectorDegree;
+    private String firstName;
+    private String lastName;
+    private String degree;
     private int salary;
-
     private List<Department> departments;
+
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
 
     public List<Department> getDepartments() {
         return departments;
@@ -35,19 +43,19 @@ public class Lector {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public LectorDegree getLectorDegree() {
-        return lectorDegree;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLectorDegree(LectorDegree lectorDegree) {
-        this.lectorDegree = lectorDegree;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

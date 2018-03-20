@@ -1,8 +1,18 @@
 package university.entity;
 
-// TODO: 19.03.2018 move to Lector class
-public enum  LectorDegree {
-    ASSISTANT,
-    ASSOCIATEPROFESSOR,
-    PROFESSOR
+public enum LectorDegree {
+    ASSISTANT("assistant"),
+    ASSOCIATE_PROFESSOR("associate professor"),
+    PROFESSOR("professor");
+
+    private final String degree;
+
+    LectorDegree(final String degree) {
+        this.degree = degree;
+    }
+
+    @Override
+    public String toString() {
+        return degree;
+    }
 }
